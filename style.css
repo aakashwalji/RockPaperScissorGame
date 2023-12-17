@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    font-family: cursive;
+    font-variant: small-caps;
+}
+body{
+    background-color: #DBE4EE;
+}
+header{
+    height: 100px;
+    background-color: #054A91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 5.5vh;
+}
+.container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.button{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+}
+.rock-btn{
+    background-image: url('/Repo/RockPaperScissorGame/Images/rock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.paper-btn{ 
+    background-image: url('/Repo/RockPaperScissorGame/Images/paper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.scissor-btn{
+    background-image: url('/Repo/RockPaperScissorGame/Images/scissors.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.border:hover{
+    border: 5px solid #F17300;
+}
+.button:hover{
+    transform: scale(1.2);
+}

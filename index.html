@@ -11,13 +11,44 @@
         <h1>Rock Paper Scissor Game</h1>
     </header>
 <main>
+
     <div class="container">
 
-        <button class="rock-btn button border"></button>
-        <button class="paper-btn button border"></button>
-        <button class="scissor-btn button border"></button>
-
+        <div class="container-left">
+            <div class="userBox hidden"></div>
+        </div>
+        
+       <div class="container-middle">
+        <button id="rock-btn" class="button border" alt ="Rock"></button>
+        <button id="paper-btn" class="button border" alt ="Paper"></button>
+        <button id="scissor-btn" class="button border" alt ="Scissor"></button>
+       </div>
+       
+        <div class="container-right">
+            <div class="compBox hidden"></div>
+        </div>
+       
     </div>
+    
+    <div class="score-board">
+        <div class="score-info">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score-info">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <div class="msg-container">
+       
+        <div class="msg-box">
+            Play Your Move!
+        </div>
+        
+    </div>
+
 </main>
 <script src="app.js"></script>
 </body>

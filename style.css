@@ -20,39 +20,109 @@ header h1{
     font-size: 5.5vh;
 }
 .container{
-    height: 200px;
+    height: 250px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    border: 2px solid;
+}
+.container-left{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+.container-middle{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    gap: 20px;
+}
+.container-right{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
 }
 .button{
     width: 150px;
     height: 150px;
     border: none;
     border-radius: 50%;
-}
-.rock-btn{
-    background-image: url('/Repo/RockPaperScissorGame/Images/rock.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.paper-btn{ 
-    background-image: url('/Repo/RockPaperScissorGame/Images/paper.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.scissor-btn{
-    background-image: url('/Repo/RockPaperScissorGame/Images/scissors.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
+#rock-btn{background-image: url('/Repo/RockPaperScissorGame/Images/rock.png');}
+#paper-btn{background-image: url('/Repo/RockPaperScissorGame/Images/paper.png');}
+#scissor-btn{background-image: url('/Repo/RockPaperScissorGame/Images/scissors.png');}
+
 .border:hover{
     border: 5px solid #F17300;
 }
 .button:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
+.score-board{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 2rem;
+}
+.score-info{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#user-score , #comp-score{
+    font-size: 3rem;
+}
+.msg-container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.msg-box{
+    height: 60px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #81A4CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+
+}
+.userBox,.compBox{
+    height: 60px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #81A4CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.hidden{
+    display: none;
+}
+

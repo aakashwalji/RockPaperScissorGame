@@ -25,15 +25,23 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
 }
 .container-left{
     height: 100%;
     width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
+}
+.userChImg,.compChImg{
+    width: 170px;
+    height: 170px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container-middle{
     height: 100%;
@@ -41,16 +49,15 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
     gap: 20px;
 }
 .container-right{
     height: 100%;
     width: 30%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid;
 }
 .button{
     width: 150px;
@@ -111,16 +118,12 @@ header h1{
     font-size: 1.8rem;
 
 }
-.userBox,.compBox{
-    height: 60px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 20px;
-    background-color: #81A4CD;
+.userText,.compText{
+    padding: 5px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
 }
 .hidden{
     display: none;
